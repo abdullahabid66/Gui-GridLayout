@@ -1,0 +1,26 @@
+import java.awt.*;
+import javax.swing.*;
+
+public class Gui
+{
+	public static void main(String args[])
+	{
+		JFrame frame = new JFrame();
+		Container con = frame.getContentPane();
+		GridLayout Grd=new GridLayout(5,4);
+		con.setLayout(Grd);
+		JButton [] btn=new JButton[20];
+	
+		for(int i=0;i<btn.length;i++)
+		{
+			btn[i] =new JButton((i+1)+" ");
+			con.add(btn[i]);
+		}
+		
+		
+		frame.setSize(300,350);
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(3);
+	}
+
+}
